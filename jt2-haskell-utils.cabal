@@ -1,0 +1,70 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           jt2-haskell-utils
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/jt2-haskell-utils#readme>
+homepage:       https://github.com/githubuser/jt2-haskell-utils#readme
+bug-reports:    https://github.com/githubuser/jt2-haskell-utils/issues
+author:         2jacobtan
+maintainer:     example@example.com
+copyright:      2021 2jacobtan
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/jt2-haskell-utils
+
+library
+  exposed-modules:
+      Lib
+      Utils
+  other-modules:
+      Paths_jt2_haskell_utils
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , process
+    , text
+  default-language: Haskell2010
+
+executable jt2-haskell-utils-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_jt2_haskell_utils
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , jt2-haskell-utils
+    , process
+    , text
+  default-language: Haskell2010
+
+test-suite jt2-haskell-utils-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_jt2_haskell_utils
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , jt2-haskell-utils
+    , process
+    , text
+  default-language: Haskell2010
