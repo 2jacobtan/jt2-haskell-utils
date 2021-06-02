@@ -26,7 +26,6 @@ source-repository head
 library
   exposed-modules:
       Lib
-      Utils
   other-modules:
       Paths_jt2_haskell_utils
   hs-source-dirs:
