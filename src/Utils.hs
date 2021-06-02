@@ -1,4 +1,4 @@
-module Utils (
+module JT2.Haskell.Utils (
   (&),
   (<&>),
   (>>>),
