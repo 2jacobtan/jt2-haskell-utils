@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "jt2-haskell-utils:lib"
+
+    - path: "./app/Main.hs"
+      component: "jt2-haskell-utils:exe:jt2-haskell-utils-exe"
+
+    - path: "./app/Paths_jt2_haskell_utils.hs"
+      component: "jt2-haskell-utils:exe:jt2-haskell-utils-exe"
+
+    - path: "./test"
+      component: "jt2-haskell-utils:test:jt2-haskell-utils-test"
